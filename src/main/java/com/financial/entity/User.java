@@ -1,7 +1,13 @@
 package com.financial.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "用户")
 public class User {
+    @ApiModelProperty(value = "id")
     private Integer userId;
+    @ApiModelProperty(value = "名称")
     private String userName;
 
     public Integer getUserId() {
